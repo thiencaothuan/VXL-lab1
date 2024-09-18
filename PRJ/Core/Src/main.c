@@ -187,9 +187,9 @@ void clearNumberOnClock(int num) {
 
 int main(void)
 {
-	int hour= 4;
+	int hour= 7;
 	int min=59;
-	int sec=44;
+	int sec=40;
 
 
 
@@ -228,7 +228,7 @@ int main(void)
 
 	    int hourLED= hour;
 	  	int minLED= min /5;
-	  	int secLED = sec/5;
+	  	int secLED = sec /5;
 
 	  	if(hourLED==0) clearNumberOnClock(11);
 	  	        else clearNumberOnClock(hourLED-1);

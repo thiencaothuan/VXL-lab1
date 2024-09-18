@@ -379,14 +379,14 @@ int main(void)
  8000334:	b580      	push	{r7, lr}
  8000336:	b086      	sub	sp, #24
  8000338:	af00      	add	r7, sp, #0
-	int hour= 4;
- 800033a:	2304      	movs	r3, #4
+	int hour= 7;
+ 800033a:	2307      	movs	r3, #7
  800033c:	617b      	str	r3, [r7, #20]
 	int min=59;
  800033e:	233b      	movs	r3, #59	; 0x3b
  8000340:	613b      	str	r3, [r7, #16]
-	int sec=44;
- 8000342:	232c      	movs	r3, #44	; 0x2c
+	int sec=40;
+ 8000342:	2328      	movs	r3, #40	; 0x28
  8000344:	60fb      	str	r3, [r7, #12]
   /* USER CODE END 1 */
 
@@ -425,7 +425,7 @@ int main(void)
  8000360:	17db      	asrs	r3, r3, #31
  8000362:	1ad3      	subs	r3, r2, r3
  8000364:	607b      	str	r3, [r7, #4]
-	  	int secLED = sec/5;
+	  	int secLED = sec /5;
  8000366:	68fb      	ldr	r3, [r7, #12]
  8000368:	4a28      	ldr	r2, [pc, #160]	; (800040c <main+0xd8>)
  800036a:	fb82 1203 	smull	r1, r2, r2, r3
