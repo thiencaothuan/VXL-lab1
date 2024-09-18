@@ -82,12 +82,12 @@ void setNumberOnClock(int num) {
  /*   HAL_GPIO_WritePin(LED_GPIO_PORT, LED_1_PIN | LED_2_PIN | LED_3_PIN |
                       LED_4_PIN | LED_5_PIN | LED_6_PIN | LED_7_PIN |
                       LED_8_PIN | LED_9_PIN | LED_10_PIN | LED_11_PIN |
-                      LED_12_PIN, GPIO_PIN_RESET); */
+                      LED_12_PIN, GPIO_PIN_RESET);
 
     // Ensure the number is within range
     if (num < 1 || num > 12) {
         return; // Optionally handle out-of-range input
-    }
+    } */
 
     // Turn on the appropriate LED
     switch (num) {
@@ -136,12 +136,12 @@ void clearNumberOnClock(int num) {
  /*   HAL_GPIO_WritePin(LED_GPIO_PORT, LED_1_PIN | LED_2_PIN | LED_3_PIN |
                       LED_4_PIN | LED_5_PIN | LED_6_PIN | LED_7_PIN |
                       LED_8_PIN | LED_9_PIN | LED_10_PIN | LED_11_PIN |
-                      LED_12_PIN, GPIO_PIN_RESET); */
+                      LED_12_PIN, GPIO_PIN_RESET);
 
     // Ensure the number is within range
     if (num < 1 || num > 12) {
         return; // Optionally handle out-of-range input
-    }
+    }*/
 
     // Turn on the appropriate LED
     switch (num) {
