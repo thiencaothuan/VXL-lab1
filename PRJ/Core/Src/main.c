@@ -94,6 +94,20 @@ int main(void)
   while (1)
   {//ex2
 
+	  HAL_GPIO_WritePin ( LED_2_GPIO_Port , LED_2_Pin , GPIO_PIN_RESET ) ;  //yellow
+	  HAL_GPIO_WritePin ( LED_3_GPIO_Port , LED_3_Pin , GPIO_PIN_SET ) ;  //red
+	  HAL_GPIO_WritePin ( LED_4_GPIO_Port , LED_4_Pin , GPIO_PIN_RESET ) ;   //green
+	  HAL_Delay (5000) ;
+	  HAL_GPIO_WritePin ( LED_2_GPIO_Port , LED_2_Pin , GPIO_PIN_RESET ) ;  //yellow
+	  HAL_GPIO_WritePin ( LED_3_GPIO_Port , LED_3_Pin , GPIO_PIN_RESET ) ;  //red
+	  HAL_GPIO_WritePin ( LED_4_GPIO_Port , LED_4_Pin , GPIO_PIN_SET ) ;   //green
+	  HAL_Delay (3000) ;
+	  HAL_GPIO_WritePin ( LED_2_GPIO_Port , LED_2_Pin , GPIO_PIN_SET ) ;  //yellow
+	  HAL_GPIO_WritePin ( LED_3_GPIO_Port , LED_3_Pin , GPIO_PIN_RESET ) ;  //red
+	  HAL_GPIO_WritePin ( LED_4_GPIO_Port , LED_4_Pin , GPIO_PIN_RESET ) ;   //green
+	  HAL_Delay (2000) ;
+
+
 
     /* USER CODE END WHILE */
 
