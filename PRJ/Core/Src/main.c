@@ -187,9 +187,9 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 
-     	int hour= 7;
-		int min=59;
-		int sec=40;
+     	int hour=3;
+		int min=40;
+		int sec=45;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -225,12 +225,7 @@ int main(void)
 	    int secLED = sec /5;
 
 
-	  	if(hourLED==0) clearNumberOnClock(11);
-	  	        else clearNumberOnClock(hourLED-1);
-	  	if(minLED==0) clearNumberOnClock(11);
-	  		  	else clearNumberOnClock(minLED-1);
-	  	if(secLED==0) clearNumberOnClock(11);
-	  		  	else clearNumberOnClock(secLED-1);
+	  	clearAllClock();
 
 	  	setNumberOnClock(hourLED);
 	  	setNumberOnClock(minLED);
