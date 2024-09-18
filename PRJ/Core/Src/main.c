@@ -184,7 +184,7 @@ void clearNumberOnClock(int num) {
 }
 
         int hour=3;
-		int min=40;
+		int min=59;
 		int sec=45;
 
 int main(void)
