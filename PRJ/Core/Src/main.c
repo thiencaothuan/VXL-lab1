@@ -92,7 +92,9 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
-  {
+  {//ex2
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
