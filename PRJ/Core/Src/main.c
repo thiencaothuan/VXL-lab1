@@ -183,13 +183,15 @@ void clearNumberOnClock(int num) {
     }
 }
 
+        int hour=3;
+		int min=40;
+		int sec=45;
+
 int main(void)
 {
   /* USER CODE BEGIN 1 */
 
-     	int hour=3;
-		int min=40;
-		int sec=45;
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -220,6 +222,7 @@ int main(void)
 
   while (1)
   {//ex10
+	  HAL_Delay(1000);
 	    int hourLED= hour;
 	    int minLED= min /5;
 	    int secLED = sec /5;
@@ -242,14 +245,14 @@ int main(void)
 	  					hour = 0;
 	  				}
 	  			}
+	  		 }
 
-	  			HAL_Delay(1000);
 
 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+
   /* USER CODE END 3 */
 }}
 
